@@ -1,0 +1,42 @@
+● src
++---● app
+|   +--● user
+|   |  |--user.component.ts|.html|.css
+|   |  +--● sign-up
+|   |  |  |--sign-up.component.ts|.html|.css
+|   |  +--● sign-in
+|   |  |  |--sign-in.component.ts|.html|.css
+|   | 
+|   +--● employee
+|   |  |--employee.component.ts|.html|.css
+|   |  +--● communication
+|   |  |  |--communication.component.ts|.html|css
+|   |  +--● report
+|   |  |  |--report.component.ts|.html|css
+|   |  |  +--● disposition
+|   |  |  |  |--disposition.component.ts|.html|css
+|   |  |  +--● documentation
+|   |  |  |  |--documentation.component.ts|.html|css
+|   |  |  +--● identification
+|   |  |  |  |--identification.component.ts|.html|css
+|   |  |  +--● position
+|   |  |  |  |--position.component.ts|.html|css
+|   |  |
+|   |  +--● review
+|   |  |  |--review.component.ts|.html|css
+|   | 
+|   +--● process-owner
+|   |  |--process-owner.component.ts|.html|.css
+|   |  
+|   +--● shared
+|   |  |--user.service.ts
+|   |  |--user.model.ts
+|   |
+|   +--app.module.ts
+|   +--app-routing.ts 
+|
++---● auth
+|   |
+|   +--● auth.guard.ts
+|   +--● auth.intercepter.ts
+|--index.html
