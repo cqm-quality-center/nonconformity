@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div id="formContent">
+        <div *ngIf="userDetails" class="header">
+            <h2 class="inactive underlineHover"> Nonconformity app </h2> <br>
+            <hr>            
+            <h2 class="inactive underlineHover">{{ role }} </h2> <br>
+            <div style="width:50%; display:inline-table;">{{userDetails.fullName.split(' ')[0]}}</div>
+            <div style="width:50%; display:inline-table;">{{userDetails.fullName.split(' ')[1]}}</div>
+        </div>
+
+        <input *ngIf="router.url === '/employee'" type="button" class="employeeSelection" value="Report" routerLink="/employee/report"/>
+        <input *ngIf="router.url === '/employee'"  type="button" class="employeeSelection" value="Current cases" routerLink="/employee/review"/>
+        <input *ngIf="router.url === '/employee'"  type="button" class="employeeSelection" value="Solved cases stats" routerLink="/employee/statistics"/>
+        <input *ngIf="router.url === '/employee'"  type="button" class="employeeSelection last" value="Communication" routerLink="/employee/communication"/>
+        <router-outlet></router-outlet>
+
+        <hr>
+        <input *ngIf="router.url !== '/employee'" class="goBack" type="button" value="Go back" routerLink="/employee"/>
+        <input type="button" (click)="onLogout()" value="Logout" />
+    </div>
+</div>
