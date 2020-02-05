@@ -1,0 +1,16 @@
+<hr>
+<div class="photo">
+  <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+  <div [hidden]="!barcodeValue" class="btn btn-block btn-warning">
+    <strong>{{ barcodeValue }}</strong>
+  </div>
+  <div [hidden]="!barcodeData" class="btn btn-block btn-warning">
+    <strong>Product part models is: {{ partModel }}</strong> <br>
+    <hr>
+    <strong>Product part name is: {{ partName }}</strong> <br>
+    <hr>
+    <strong>Product part production series date is: {{ partProduction }}</strong> <br>
+  </div>
+  <button class="employeeSelection" type="submit" (click)="onGetBarcodeData()">Get entry</button>
+</div>
+<hr>

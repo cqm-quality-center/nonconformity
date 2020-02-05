@@ -1,0 +1,32 @@
+input[type=button] {
+    margin: 4px;
+    margin-bottom: 0px;
+    width: 318.34px;
+    padding: 5px 10px;
+    background-color: #0C2440;
+    
+}
+
+input[type=button]:active {
+    background-color: #0C2440;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+input[type=button].nonconfSolving {
+    background-color: #0C2440;
+    opacity:0.6;
+}
+
+
+.nonconformityDetails {
+    background-color: #0C2440;
+    opacity:0.8;
+    color: white;
+    width: 318.34px;
+    margin: auto;
+    margin-top: -5px;
+    padding-top: 5px;
+    border-radius: 0px 0px 5px 5px;
+    font-size: small;
+}

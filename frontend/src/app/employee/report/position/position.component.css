@@ -1,0 +1,19 @@
+.employeeSelection {
+    
+    width: 80%;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}
+
+.employeeSelection:active {
+    
+    width: 80%;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}

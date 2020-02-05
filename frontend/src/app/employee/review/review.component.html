@@ -1,0 +1,26 @@
+
+<h4>List of current nonconformities:</h4>
+<hr>
+
+<div>
+    <div *ngFor="let nonconformity of nonconformities; let i = index"> 
+        <input type="button" class="nonconfButton" (click)="selectedNonconformity(nonconformity.mark)" value="{{nonconformity.detail}} | {{i+1001}}" />
+        <div *ngIf="nonconformitySelected && nonconformitySelectedMark == nonconformity.mark" > 
+            <div class="nonconformityDetails">
+                <strong>Mark:</strong>  {{ nonconformity.mark }} <br>
+                <strong>Part name:</strong>  {{ nonconformity.part }} <br>
+                <strong>Quantity:</strong> {{ nonconformity.amount}} <br>
+                <strong>Description:</strong> {{ nonconformity.detail }} <br>
+                <strong>Placement:</strong> {{ nonconformity.position }} <br>
+                <strong>Selected disposition :</strong> {{ nonconformity.disposition[0] }} <br>
+                <strong>Disposition description:</strong> {{ nonconformity.disposition[1] }} <br>
+                <strong>Production date:</strong> {{ nonconformity.barcodeProductionDate }} <br>
+            </div> 
+            <div>
+                <input type="button" class="nonconfSolving" value="Change data" />
+                <input type="button" class="nonconfSolving" value="Move to solved cases" />
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<hr>
+<p class="info" style="text-align: center;">Please select a way to resolve a nonconformity from the following list.</p>
+<form #f="ngForm" (ngSubmit)="setNonconformityClass(f)" novalidate>
+  <label *ngFor="let nonClass of nonClasses; let i of index"><input id="{{i}}" type="radio"
+      name="nonConClassSelected" value="{{ nonClass.Name }}" ngModel> {{ nonClass.Name }} <br></label> 
+  <input class="employeeSelection" type="submit" value="Confirm entry">
+</form>
+<hr>

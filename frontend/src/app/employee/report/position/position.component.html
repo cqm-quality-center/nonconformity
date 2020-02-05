@@ -1,0 +1,14 @@
+<hr>
+<h2>Select nonconformity position</h2>
+<form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSelectedPositon(selectedPosition)">
+  <select [(ngModel)]="selectedPosition" name="position">
+    <option *ngFor="let position of positions" [value]="position.value">
+      {{position.viewValue}}
+    </option>
+  </select>
+  <p> Selected position: {{selectedPosition}} </p>
+  <input class="employeeSelection" type="submit" value="Confirm selection">
+</form>
+<hr>
+
+

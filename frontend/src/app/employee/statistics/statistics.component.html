@@ -1,0 +1,31 @@
+<h2 style="margin-top: 10px;">Statistical data</h2>
+<hr>
+<div>
+    <h4>Solved NC cases in last five years</h4>
+    <div style="display: block">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+    </div>
+</div>
+<hr>
+
+<!-- 
+<div style="display: block">
+  <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"></canvas>
+</div>
+<hr>    
+-->
+
+<div style="display: block">
+    <h4> NC disposition for the last two years</h4>
+    <canvas baseChart [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType"></canvas>
+</div>
+<hr>
+
+<div style="display: block">
+    <h4> Last years NC quarterly distributed</h4>
+    <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"></canvas>
+</div>
+
+<script src="node_modules/chart.js/src/chart.js"></script>

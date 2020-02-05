@@ -1,0 +1,24 @@
+<h2>Report</h2>
+<br>
+<form #NonconformtiyReportForm="ngForm" fromGroup (ngSubmit)="NonconformtiyReportForm.valid && onSubmitted(NonconformtiyReportForm)">
+    <input type="button" class="nonconfButton" (click)="onPosition()" value="Position" routerLink="/employee/onPosition"/>
+    <router-outlet *ngIf="router.url === '/employee/report/onPosition'"></router-outlet>
+
+    <input type="button" class="nonconfButton" (click)="onIdentification()" value="Identification" routerLink="/employee/onIdentification"/>
+    <router-outlet *ngIf="router.url === '/employee/report/onIdentification'"></router-outlet> 
+
+    <input type="button" class="nonconfButton" (click)="onDocumentation()" value="Documentation" routerLink="/employee/onDocumentation"/>
+    <router-outlet *ngIf="router.url === '/employee/report/onDocumentation'"></router-outlet>
+
+    <input type="button" class="nonconfButton" (click)="onDisposition()" value="Disposition" routerLink="/employee/onDisposition"/>
+    <router-outlet *ngIf="router.url === '/employee/report/onDisposition'"></router-outlet>
+
+    <input type="button" class="nonconfButton" (click)="onSubmitted()" value="Submit report" />
+</form>
+
+<!-- Success message -->
+<div class="success" *ngIf="showSucessMessage">
+    Saved successfully
+</div>
+
+<!-- https://stackoverflow.com/questions/37662456/angular-2-output-from-router-outlet -->

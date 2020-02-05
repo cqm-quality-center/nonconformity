@@ -1,0 +1,15 @@
+<hr>
+<form #documentationForm="ngForm" (ngSubmit)="documentationForm.valid && onSubmitDefinition(documentationForm)">
+    <input type="text" autocomplete="username" id="mark" [(ngModel)]="nonconformity.mark" name="mark"
+    #mark="ngModel" placeholder="mark" required>
+    <input type="text" autocomplete="username" id="part" [(ngModel)]="nonconformity.part" name="part"
+    #part="ngModel" placeholder="part" required>
+    <input type="text" autocomplete="username" id="um" [(ngModel)]="nonconformity.um" name="um"
+    #um="ngModel" placeholder="um" required>
+    <input type="text" autocomplete="username" id="amount" [(ngModel)]="nonconformity.amount" name="amount"
+    #amount="ngModel" placeholder="amount" required>
+    <input type="text" rows="4" cols="50" autocomplete="username" id="detail" [(ngModel)]="nonconformity.detail" name="detail"
+    #detail="ngModel" placeholder="detail description" required>        
+    <input class="employeeSelection" type="submit" value="Save entry">
+</form>
+<hr>

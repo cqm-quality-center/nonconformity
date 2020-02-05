@@ -1,0 +1,41 @@
+.info {
+    padding: 0 10% 0 10%;
+    background: #0C2440;
+    display: block;
+    border-radius: 5px;
+    color: white;
+}
+
+
+label {
+    display: block;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    background: #0C2440;
+    padding: 5px;
+    margin-top:5px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+}
+
+.employeeSelection {
+    
+    width: 80%;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}
+
+.employeeSelection:active {
+    
+    width: 80%;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}

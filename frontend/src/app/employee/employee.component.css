@@ -1,0 +1,46 @@
+.header {
+    background-image: url('/assets/img/bg.jpg');
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.userDetails {
+    color: white; 
+    text-align: center;
+
+}
+
+.employeeSelection {
+    background-color: #0C2440;
+    width: 80%;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}
+
+.employeeSelection:active {
+    background-color: #0C2440;
+    width: 80%;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 5px;
+    max-width: 214.91px;
+}
+
+.last{ 
+    margin-bottom: 50%;
+}
+
+.goBack {
+    max-width: 214.91px;
+    margin-bottom: 5px;
+}
